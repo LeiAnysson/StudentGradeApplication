@@ -63,7 +63,6 @@ namespace StudentGradeApplication
             History = Convert.ToDouble(textBox7.Text);
 
             avg = Convert.ToDouble((English + Math + Science + Filipino + History) / 5);
-            label8.TextAlign = ContentAlignment.TopCenter;
             label8.Text = avg >= 75.00 ? "The student passed." : "The student failed.";
             label9.Text = "The general average of " + name + " is " + avg + ".";
         }
